@@ -1,0 +1,49 @@
+* {
+    cursor: url(lagom-judges-hammer_3.png), default;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    background: url("./mario-bg.jpg");
+    background-size: cover;
+}
+
+#board {
+    width: 810px;
+    height: 810px;
+    /* background-color: green; */
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    background: url("./soil.png");
+    background-size: cover;
+    border: 3px solid white;
+    border-radius: 25px;
+}
+
+#board div {
+    /* board = 900 x 900, divide into 3x3 tiles --> 180 x 180 per div */
+    width: 270px;
+    height: 270px;
+    background-image: url("./pipe.png");
+    background-size: cover;
+}
+
+#board div img {
+    /* all img tags inside tiles */
+    width: 150px;
+    height: 150px;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+#board div img:active {
+    cursor: url(lagom-judges-hammer_3_4.png),default;
+}
